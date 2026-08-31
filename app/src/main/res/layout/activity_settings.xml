@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Contineo Details"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1E5AA8"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stored only on this device, encrypted."
+            android:textSize="13sp"
+            android:textColor="#6B7280"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USN"
+            android:textColor="#374151"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etUsn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1MS25EE020"
+            android:inputType="textCapCharacters"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth (DD-MM-YYYY)"
+            android:textColor="#374151"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 15-08-2007"
+            android:inputType="date"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify using"
+            android:textColor="#374151"
+            android:layout_marginBottom="4dp"/>
+        <RadioGroup
+            android:id="@+id/rgParent"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <RadioButton
+                android:id="@+id/rbMother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mother's number"/>
+            <RadioButton
+                android:id="@+id/rbFather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father's number"
+                android:layout_marginStart="24dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last 4 digits of that number"
+            android:textColor="#374151"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etLast4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 4821"
+            android:inputType="number"
+            android:maxLength="4"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save &amp; Continue"
+            android:backgroundTint="#1E5AA8"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

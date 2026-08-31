@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.ContineoLogin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1E5AA8</item>
+        <item name="colorPrimaryDark">#123C73</item>
+        <item name="colorAccent">#F2A71B</item>
+    </style>
+</resources>
